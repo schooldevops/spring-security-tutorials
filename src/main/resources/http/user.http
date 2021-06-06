@@ -1,0 +1,14 @@
+### User GET
+GET http://localhost:8080/users
+Content-Type: application/json
+Authorization: Basic dXNlcjpiYzQ2ZmYyMy0zNmVhLTRiYTktODExNi05MWVlZmY0MjgyNmM=
+
+# 이를 위해서 다음과 같이 Basic Encoding 을 해 주어야한다.
+
+//```shell
+//echo -n 'user:bc46ff23-36ea-4ba9-8116-91eeff42826c' | base64
+//```
+
+##
+
+//YWRtaW46YWRtaW4xMjM=
