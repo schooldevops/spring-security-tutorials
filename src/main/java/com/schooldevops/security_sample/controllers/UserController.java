@@ -10,4 +10,9 @@ public class UserController {
     public String getUser() {
         return "Hello I'm kido.";
     }
+
+    @GetMapping("/users/anybody")
+    public String getAnybodyUser() {
+        return "It is good day right?";
+    }
 }

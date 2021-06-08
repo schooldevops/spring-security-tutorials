@@ -16,7 +16,7 @@ public class MyAuthenticationProvider implements AuthenticationProvider {
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
         String userName = authentication.getName();
         String password = authentication.getCredentials().toString();
-
+        
         if ("custom_user".equals(userName) && "custom_user_123".equals(password) ) {
             return new UsernamePasswordAuthenticationToken(userName, password, Arrays.asList());
         } else {
